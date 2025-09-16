@@ -3,29 +3,35 @@
 [![Next.js](https://img.shields.io/badge/Next.js-15.4.6-black?style=flat-square&logo=next.js)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-19.1.0-blue?style=flat-square&logo=react)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.0-blue?style=flat-square&logo=tailwind-css)](https://tailwindcss.com/)
 [![Prisma](https://img.shields.io/badge/Prisma-6.13.0-blue?style=flat-square&logo=prisma)](https://www.prisma.io/)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-blue?style=flat-square&logo=postgresql)](https://www.postgresql.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## 📚 Project Overview
+## Overview
 
 **Masterji** is a modern, full-stack Learning Management System (LMS) built with cutting-edge web technologies. It provides a comprehensive platform for creating, managing, and delivering online courses with advanced features like drag-and-drop course structuring, rich text editing, and secure file management.
 
-### 🎯 Problem It Solves
-- **Traditional LMS Complexity**: Simplifies course creation and management for instructors
-- **Content Management**: Provides intuitive tools for organizing course content hierarchically
-- **User Experience**: Offers modern, responsive interfaces for both learners and administrators
-- **Security**: Implements robust authentication and authorization systems
+## Key Features
 
-### ✨ Key Features
-- **Course Management**: Create, edit, and organize courses with chapters and lessons
+- **User Authentication**: Secure login with multiple providers (GitHub, email OTP)
+- **Course Management**: Create and organize courses with chapters and lessons
 - **Rich Content Editor**: Advanced text editing with TipTap integration
-- **File Management**: Secure S3-compatible storage for images and videos
-- **User Authentication**: Multi-provider authentication with GitHub OAuth and email OTP
-- **Admin Dashboard**: Comprehensive course administration tools
+- **File Management**: Secure file uploads with S3-compatible storage
 - **Responsive Design**: Mobile-first approach with modern UI components
+- **Admin Dashboard**: Comprehensive course administration tools
+- **Payment Processing**: Integrated Stripe payment system
 
-## 🛠️ Tech Stack
+## Quick Start
+
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Set up environment variables (see [.env.example](.env.example))
+4. Run database migrations: `npx prisma migrate dev`
+5. Start the development server: `npm run dev`
+
+For detailed setup instructions, see the [Development Guide](/docs/DEVELOPMENT.md).
+
+## Tech Stack
 
 ### Frontend
 - **Framework**: Next.js 15.4.6 (App Router)
@@ -48,13 +54,7 @@
 - **Security**: Arcjet for bot detection and rate limiting
 - **Deployment**: Vercel-ready configuration
 
-### Development Tools
-- **Linting**: ESLint with Next.js config
-- **Package Manager**: npm
-- **Build Tool**: Next.js with Turbopack
-- **CSS Processing**: PostCSS
-
-## 📁 Folder Structure
+## Folder Structure
 
 ```
 masterji/
@@ -98,7 +98,7 @@ masterji/
 └── middleware.ts                # Next.js middleware
 ```
 
-## 🚀 Setup Instructions
+## Contributing
 
 ### Prerequisites
 - Node.js 18+ 
@@ -351,15 +351,3 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 - **Semantic HTML**: Proper HTML structure
 - **Keyboard Navigation**: Full keyboard support
 - **Screen Reader**: ARIA labels and descriptions
-
----
-
-## 📞 Support
-
-- **Issues**: [GitHub Issues](link-to-issues)
-- **Discussions**: [GitHub Discussions](link-to-discussions)
-- **Documentation**: [Project Wiki](link-to-wiki)
-
----
-
-**Built with ❤️ by Zeel Jasani**

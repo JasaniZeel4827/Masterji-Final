@@ -44,21 +44,6 @@ export function CourseProgressCard({ data }: iAppProps) {
                     {data.Course.smallDescription}
                 </p>
 
-                {/* <div className="space-y-4">
-                    <div className="flex justify-between mb-1 text-sm">
-                        <p>progress:</p>
-                        <p className="font-medium">{progressPercentage}%</p>
-                    </div>
-                    <Progress value={progressPercentage} className="h-1.5" />
-
-
-
-                    <p className="text-xs text-muted-foreground mt-1">
-                        {completedLesson} of {totalLesson} lessons completed
-                    </p>
-                </div> */}
-
-
                 <div className="space-y-4 mt-5">
                     <div className="flex justify-between mb-1 text-sm">
                         <p>Progress:</p>
@@ -74,7 +59,7 @@ export function CourseProgressCard({ data }: iAppProps) {
                     href={`/dashboard/${data.Course.slug}`}
                     className={buttonVariants({ className: "w-full mt-4" })}
                 >
-                    Learn More
+                    Watch Curse
                 </Link>
             </CardContent>
         </Card>
